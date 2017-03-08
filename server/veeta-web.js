@@ -20,6 +20,9 @@ app.use('/static', express.static('static'))
 app.get('/', function(req, res, next) {
   res.render('home')
 })
+app.get('/app', function(req, res, next) {
+  res.render('app')
+})
 
 app.listen(process.env.PORT)
 console.log('Listening on port ' + process.env.PORT)
