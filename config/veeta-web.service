@@ -1,0 +1,14 @@
+[Unit]
+Description=Veeta Web
+After=network.target
+
+[Service]
+ExecStart=/var/www/veeta-web/server/veeta-web.js
+Restart=always
+User=ubuntu
+Group=ubuntu
+Environment=PATH=/usr/bin:/usr/local/bin
+WorkingDirectory=/var/www/veeta-web
+
+[Install]
+WantedBy=multi-user.target
