@@ -55,6 +55,9 @@ body > section, body > section.container {
   width: 100%;
   height: 100%;
 }
+.hidden {
+  display: none;
+}
 
 section.hero {
   background-color: #42548E;
@@ -91,6 +94,9 @@ section.benefits h3 {
   line-height: 30px;
   margin: 12px 0;
 }
+section.benefits .row {
+  margin-bottom: 60px;
+}
 section.benefits p {
   font-size: 18px;
   line-height: 32px;
@@ -105,7 +111,7 @@ section.benefits p {
 }
 section.benefits .testimonials-item p {
   color: #fff;
-  background-color: #6170A1;
+  background-color: #5BA4CF;
   padding: 18px 12px;
   border-radius: 4px;
   font-size: 14px;
@@ -119,7 +125,7 @@ section.benefits .testimonials-item p {
   height: 0; 
   border-left: 12px solid transparent;
   border-right: 12px solid transparent;
-  border-top: 12px solid #6170A1;
+  border-top: 12px solid #5BA4CF;
   position: absolute;
   bottom: -12px;
   left: 24px;
