@@ -90,16 +90,18 @@
     <div class="one-third column">
       <img class="benefits-icon" src="/static/img/plus.svg">
       <h3>Add Yours!</h3>
-      <div class="testimonials-item">
+      <div class="testimonials-item editable">
         <p>
-          <textarea id="" rows="4"></textarea>
+          <textarea id="testimonials-form-text" rows="4"></textarea>
         </p>
-        <img src="/static/img/user_m.svg">
-        <div>
-          <strong><input type="number" placeholder="Age"></strong>
+        <div class="display-flex">
+          <img src="/static/img/user_m.svg">
+          <input id="testimonials-form-age" type="number" placeholder="Age">
         </div>
-        <input type="text" placeholder="Who are you?">
-        <button>Submit</button>
+        <input type="text" id="testimonials-form-description" placeholder="Who are you?">
+        <div class="flex-center">
+          <button>Submit</button>
+        </div>
       </div>
     </div>
   </div>

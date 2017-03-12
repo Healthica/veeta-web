@@ -48,6 +48,9 @@ h2 {
 body > section, body > section.container {
   padding: 48px 24px;
 }
+.display-flex {
+  display: flex;
+}
 .flex-center {
   display: flex;
   justify-content: center;
@@ -94,7 +97,7 @@ section.benefits h3 {
   line-height: 30px;
   margin: 12px 0;
 }
-section.benefits .row {
+section.benefits > .row {
   margin-bottom: 60px;
 }
 section.benefits p {
@@ -131,9 +134,32 @@ section.benefits .testimonials-item p {
   left: 24px;
 }
 .testimonials-item img {
+  max-height: 48px;
   max-width: 48px;
   float: left;
   margin: 0 12px;
+}
+section.benefits .testimonials-item.editable p {
+  padding: 0;
+}
+.testimonials-item.editable textarea {
+  margin-bottom: 0;
+  background-color: transparent;
+  border-color: transparent;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  letter-spacing: inherit;
+  width: 100%;
+  padding: 18px 12px;
+  min-height: 120px;
+}
+#testimonials-form-age {
+  width: 100%;
+  margin-top: 4px;
+}
+#testimonials-form-description {
+  width: 100%;
 }
 #testimonials.open > .row.hidden {
   display: block;
