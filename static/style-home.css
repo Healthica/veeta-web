@@ -135,6 +135,22 @@ section.benefits .testimonials-item p {
   float: left;
   margin: 0 12px;
 }
+#testimonials.open > .row.hidden {
+  display: block;
+}
+#testimonials-toggle {
+  cursor: pointer;
+}
+#testimonials-toggle img {
+  max-height: 1.15em;
+  transform: translateY(15%);
+}
+#testimonials.open #testimonials-toggle .show-more {
+  display: none;
+}
+#testimonials:not(.open) #testimonials-toggle .show-less {
+  display: none;
+}
 
 section.marketing {
   background-color: #B7DDB0;

@@ -13,7 +13,7 @@
   </div>
 </section>
 
-<section class="container benefits text-center">
+<section id="testimonials" class="container benefits text-center">
   <h2>What can you do with Veeta?</h2>
   <div class="row">
     <div class="one-third column">
@@ -103,6 +103,16 @@
       </div>
     </div>
   </div>
+  <div id="testimonials-toggle" class="text-center">
+    <button class="show-more">
+      <img src="/static/img/chevron-arrow-down.svg">
+      Show more
+    </button>
+    <button class="show-less">
+      <img src="/static/img/chevron-arrow-up.svg">
+      Show less
+    </button>
+  </div>
 </section>
 
 <section class="marketing">
@@ -120,5 +130,11 @@
     </div>
   </div>
 </section>
+
+<script>
+document.getElementById('testimonials-toggle').addEventListener('click', function() {
+  document.getElementById('testimonials').classList.toggle('open');
+});
+</script>
 
 {{>footer}}
