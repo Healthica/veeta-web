@@ -48,6 +48,11 @@ h2 {
 body > section, body > section.container {
   padding: 48px 24px;
 }
+p {
+  font-size: 18px;
+  line-height: 32px;
+  margin: 24px 0;
+}
 .display-flex {
   display: flex;
 }
@@ -99,11 +104,6 @@ section.benefits h3 {
 }
 section.benefits > .row {
   margin-bottom: 60px;
-}
-section.benefits p {
-  font-size: 18px;
-  line-height: 32px;
-  margin: 24px 0;
 }
 .benefits-icon {
   max-width: 60px;
@@ -179,5 +179,10 @@ section.benefits .testimonials-item.editable p {
 }
 
 section.marketing {
+  color: #232323;
   background-color: #B7DDB0;
+}
+section.marketing h2 {
+  font-size: 28px;
+  line-height: 32px;
 }
