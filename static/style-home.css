@@ -71,6 +71,7 @@ section.hero {
   background-color: #42548E;
   color: #fff;
   position: relative;
+  padding-top: 138px;
 }
 section.hero .call-to-action {
   padding: 48px 0;
