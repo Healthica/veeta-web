@@ -128,7 +128,7 @@
         </p>
       </div>
       <div class="four columns">
-        <img class="marketing-icon" src="/static/img/tablets.svg">
+        <img class="marketing-screenshot" src="/static/screenshots/symptoms.png">
       </div>
       <div class="one column">&nbsp;</div>
     </div>
@@ -153,7 +153,7 @@
     </div>
     <div class="one-third column">
       <img class="benefits-icon" src="/static/img/tablets.svg">
-      <h3>Yours</h3>
+      <h3>Modern</h3>
       <p>
         Ei audiam evertitur his, in quidam essent timeam vel. Simul dolores antiopam ea vim. Ridens deterruisset ut cum, id laoreet consequuntur voluptatibus eum.
       </p>
@@ -172,7 +172,7 @@
         </p>
       </div>
       <div class="four columns">
-        <img class="marketing-icon" src="/static/img/tablets.svg">
+        <img class="marketing-screenshot" src="/static/screenshots/symptoms.png">
       </div>
       <div class="one column">&nbsp;</div>
     </div>
@@ -209,6 +209,13 @@
 document.getElementById('testimonials-toggle').addEventListener('click', function() {
   document.getElementById('testimonials').classList.toggle('open');
 });
+var onScreenshotClick = function(ev) {
+  window.open(ev.target.src, '_blank');
+};
+var screenshots = document.querySelectorAll('.marketing-screenshot');
+for (var i = 0; i < screenshots.length; i++) {
+  screenshots[i].addEventListener('click', onScreenshotClick);
+}
 </script>
 
 {{>footer}}

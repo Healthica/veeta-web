@@ -186,3 +186,7 @@ section.marketing h2 {
   font-size: 28px;
   line-height: 32px;
 }
+.marketing-screenshot {
+  cursor: zoom-in;
+  max-width: 100%;
+}
