@@ -52,6 +52,7 @@ p {
   font-size: 18px;
   line-height: 32px;
   margin: 24px 0;
+  letter-spacing: 0;
 }
 .display-flex {
   display: flex;
@@ -180,8 +181,17 @@ section.benefits .testimonials-item.editable p {
 }
 
 section.marketing {
+  color: #fff;
+}
+section.marketing.blue {
+  background-color: #026AA7;
+}
+section.marketing.orange {
   color: #232323;
-  background-color: #B7DDB0;
+  background-color: #FFAB4A;
+}
+section.marketing.green {
+  background-color: #61BD4F;
 }
 section.marketing h2 {
   font-size: 28px;
