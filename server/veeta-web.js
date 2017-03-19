@@ -23,9 +23,6 @@ app.get('/', function(req, res, next) {
 app.get('/app', function(req, res, next) {
   res.render('app')
 })
-app.get('/api/user', function(req, res, next) {
-  res.json({"success":true,"user":{"id":"63a4faca-b557-4e50-ae56-cb4514562327","name":"Guest","show_onboarding":true}})
-})
 
 app.listen(process.env.PORT)
 console.log('Listening on port ' + process.env.PORT)
