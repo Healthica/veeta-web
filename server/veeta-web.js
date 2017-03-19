@@ -24,5 +24,14 @@ app.get('/app', function(req, res, next) {
   res.render('app')
 })
 
+if (process.env.ENV === 'development' && process.env.DEV_API_URL) {
+  const api_proxy = require('express-http-proxy')
+  app.all(/^\/api/, api_proxy(process.env.DEV_API_URL, {
+    forwardPath: function(req) {
+      return require('url').parse(req.url).path.replace(/^\/api/, '')
+    }
+  }))
+}
+
 app.listen(process.env.PORT)
 console.log('Listening on port ' + process.env.PORT)

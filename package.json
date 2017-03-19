@@ -13,5 +13,8 @@
     "node-env-file": "^0.1.8",
     "shipit-cli": "^3.0.0"
   },
-  "license": "GNU GPLv3"
+  "license": "GNU GPLv3",
+  "devDependencies": {
+    "express-http-proxy": "^0.11.0"
+  }
 }
