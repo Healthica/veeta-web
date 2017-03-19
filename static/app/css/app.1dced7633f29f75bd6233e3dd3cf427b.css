@@ -19746,6 +19746,20 @@ a.no-link {
 a.no-link:hover {
   opacity: 1;
 }
+@media screen and (max-width: 768px) {
+.left-nav {
+    z-index: 1100;
+    left: -182px;
+    transition: left 0.1s ease-in-out !important;
+    will-change: left;
+}
+.left-nav.open {
+    left: 0;
+}
+.right-pane {
+    margin-left: 0;
+}
+}
 .el-button--link {
   border: 0 solid transparent;
 }
@@ -19992,6 +20006,29 @@ a.no-link:hover {
   -ms-flex-direction: column;
       flex-direction: column;
 }
+.mobile-toggler[data-v-6bfca7c8] {
+  display: none;
+  position: absolute;
+  padding: 12px;
+  cursor: pointer;
+}
+.mobile-toggler img[data-v-6bfca7c8] {
+  width: 20px;
+}
+@media screen and (max-width: 768px) {
+.mobile-toggler[data-v-6bfca7c8] {
+    display: block;
+    top: 12px;
+    right: -44px;
+}
+.side-nav.open .mobile-toggler .hamburger-icon[data-v-6bfca7c8],
+  .side-nav:not(.open) .mobile-toggler .arrow-left-icon[data-v-6bfca7c8] {
+    display: none;
+}
+.side-nav.open .mobile-toggler[data-v-6bfca7c8] {
+    right: 0;
+}
+}
 .navbar a[data-v-6bfca7c8] {
   font-size: 14px;
   padding: 12px 18px;
@@ -20216,7 +20253,7 @@ a.no-link:hover {
 
 .new-event-container[data-v-5bbe4a9e] {
   position: fixed;
-  z-index: 2000;
+  z-index: 1000;
   display: -ms-flexbox;
   display: flex;
   height: 68px;
@@ -20229,7 +20266,6 @@ a.no-link:hover {
   justify-content: space-between;
   background: #fff;
   box-shadow: 0 2px 8px 0 rgba(0,0,0,.1);
-  min-width: 600px;
 }
 .new-event-input[data-v-5bbe4a9e] {
   font-size: 18px;
@@ -20241,6 +20277,14 @@ a.no-link:hover {
   overflow: hidden;
   white-space: nowrap;
   background: 0 0;
+}
+@media screen and (max-width: 768px) {
+.new-event-container[data-v-5bbe4a9e] {
+    left: 0;
+}
+.new-event-input[data-v-5bbe4a9e] {
+    padding-left: 48px;
+}
 }
 .new-event-input[data-v-5bbe4a9e]:focus {
   outline: 0;
