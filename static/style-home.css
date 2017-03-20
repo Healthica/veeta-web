@@ -68,6 +68,18 @@ p {
   display: none;
 }
 
+.no-mobile {
+  display: none;
+}
+@media (min-width: 550px) {
+  .no-mobile {
+    display: block;
+  }
+  .mobile-only {
+    display: none;
+  }
+}
+
 section.hero {
   background-color: #42548E;
   color: #fff;
