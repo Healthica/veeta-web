@@ -19686,14 +19686,14 @@
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 300;
-  src: local('Open Sans Light'), local('OpenSans-Light'), url(/static/open-sans-latin-300.woff2) format('woff2');
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(/static/app/fonts/open-sans-latin-300.bc5457c.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
-  src: local('Open Sans'), local('OpenSans'), url(/static/open-sans-latin-400.woff2) format('woff2');
+  src: local('Open Sans'), local('OpenSans'), url(/static/app/fonts/open-sans-latin-400.e64cab1.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 html, body {
@@ -20250,6 +20250,11 @@ a.no-link:hover {
 .onboardingModalSkip:hover {
   opacity: 1;
 }
+.quick-add {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
 
 .new-event-container[data-v-5bbe4a9e] {
   position: fixed;
@@ -20582,6 +20587,88 @@ a.no-link:hover {
 .modal-saved-text[data-v-9b2d95aa] {
   margin-right: 18px;
   font-size: 11px;
+}
+
+.quick-add {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column-reverse;
+      flex-direction: column-reverse;
+  padding: 20px;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.quick-add > * {
+  margin-top: 8px;
+}
+
+.quick-add-item {
+  padding: 18px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #fff;
+  box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.4);
+  transition: all 0.2s ease-in-out;
+}
+.quick-add-item.small {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+}
+.quick-add-item.primary {
+  background-color: #0079BF;
+}
+.quick-add-item.primary:hover {
+  background-color: #298FCA;
+}
+.quick-add-item.green {
+  background-color: #61BD4F;
+}
+.quick-add-item.green:hover {
+  background-color: #7BC86C;
+}
+.quick-add-item.orange {
+  background-color: #FFAB4A;
+}
+.quick-add-item.orange:hover {
+  background-color: #FFB968;
+}
+.quick-add-item.red {
+  background-color: #EB5A46;
+}
+.quick-add-item.red:hover {
+  background-color: #EF7564;
+}
+.quick-add-item-title {
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 13px;
+  position: absolute;
+  color: #ececec;
+  background-color: rgba(70, 70, 70, 0.9);
+  padding: 6px 8px;
+  border-radius: 2px;
+  right: 96px;
+}
+.quick-add-item.small .quick-add-item-title {
+  right: 90px;
+}
+
+.icon {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.icon svg * {
+  fill: currentColor;
 }
 
 .dashboard {
