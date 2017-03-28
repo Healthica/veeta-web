@@ -20207,49 +20207,6 @@ a.no-link:hover {
 .eventModal .el-dialog__header {
   display: none;
 }
-.onboardingModal {
-  max-width: 360px;
-  text-align: center;
-}
-.onboardingModal .el-dialog__header {
-  display: none;
-}
-.onboardingModal .el-dialog__body {
-  padding: 0;
-}
-.onboardingModal .el-carousel__item p {
-  padding: 0 24px;
-}
-.onboardingModal.hiddenPrev .el-carousel__arrow--left,
-.onboardingModal.hiddenNext .el-carousel__arrow--right {
-  display: none;
-}
-.onboardingModal .el-carousel__item:nth-of-type(1) {
-  color: #fff;
-  background-color: #0079BF;
-}
-.onboardingModal .el-carousel__item:nth-of-type(2) {
-  color: #fff;
-  background-color: #42548E;
-}
-.onboardingModal .el-carousel__item:nth-of-type(3) {
-  color: #fff;
-  background-color: #61BD4F;
-}
-.onboardingModal img {
-  width: 100%;
-}
-.onboardingModalSkip {
-  color: #fff;
-  opacity: 0.5;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  padding: 12px 24px;
-}
-.onboardingModalSkip:hover {
-  opacity: 1;
-}
 .quick-add {
   position: absolute;
   bottom: 0;
@@ -20584,9 +20541,49 @@ a.no-link:hover {
   margin-top: 36px;
   float: right;
 }
-.modal-saved-text[data-v-9b2d95aa] {
-  margin-right: 18px;
-  font-size: 11px;
+
+.onboardingModal {
+  max-width: 360px;
+  text-align: center;
+}
+.onboardingModal .el-dialog__header {
+  display: none;
+}
+.onboardingModal .el-dialog__body {
+  padding: 0;
+}
+.onboardingModal .el-carousel__item p {
+  padding: 0 24px;
+}
+.onboardingModal.hiddenPrev .el-carousel__arrow--left,
+.onboardingModal.hiddenNext .el-carousel__arrow--right {
+  display: none;
+}
+.onboardingModal .el-carousel__item:nth-of-type(1) {
+  color: #fff;
+  background-color: #0079BF;
+}
+.onboardingModal .el-carousel__item:nth-of-type(2) {
+  color: #fff;
+  background-color: #42548E;
+}
+.onboardingModal .el-carousel__item:nth-of-type(3) {
+  color: #fff;
+  background-color: #61BD4F;
+}
+.onboardingModal img {
+  width: 100%;
+}
+.onboardingModalSkip {
+  color: #fff;
+  opacity: 0.5;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 12px 24px;
+}
+.onboardingModalSkip:hover {
+  opacity: 1;
 }
 
 .quick-add {
